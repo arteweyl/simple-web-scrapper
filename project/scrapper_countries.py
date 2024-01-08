@@ -49,6 +49,7 @@ for country in countries:
              }
     info_to_save.append(info)
 
+#salva de fato o arquivo
 with open ('countries.csv', 'w') as file:
     writer = csv.DictWriter(file,fieldnames=['Name','Date of Admission','Coordinates','Complete URL'])
     writer.writeheader()
